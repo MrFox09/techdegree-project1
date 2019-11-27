@@ -60,7 +60,7 @@ function getRandomQuote() {
 /***
  * calls the getRandomQuote function, stores it. HTML code to replace the standard value.
   Checks if there are citiation and year available to extend the HTML code.
-  Calls the skipColor function to change the backgroundColor 
+  Calls the skipColor function to change the backgroundColor
 ***/
 
 function printQuote() {
@@ -91,6 +91,10 @@ function skipColor() {
 
 
 }
+
+// Time Interval to skip quotes automaticly
+setInterval(function (){printQuote()}, 20000);
+
 
 
 /***
